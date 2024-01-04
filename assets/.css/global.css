@@ -31,6 +31,88 @@ body {
     margin: 0;
 }
 
+.pokemons .normal {
+    background-color: #a6a877;
+}
+
+.pokemons .grass {
+    background-color: #77c850;
+}
+
+.pokemons .fire {
+    background-color: #ee7f30;
+}
+
+.pokemons .water {
+    background-color: #678fee;
+}
+
+.pokemons .electric {
+    background-color: #f7cf2e;
+}
+
+.pokemons .ice {
+    background-color: #98d5d7;
+}
+
+.pokemons .ground {
+    background-color: #dfbf69;
+}
+
+.pokemons .flying {
+    background-color: #4b4b4b;
+}
+
+.pokemons .poison {
+    background-color: #ff5cb8;
+}
+
+.pokemons .fighting {
+    background-color: #ef4747;
+}
+
+.pokemons .psychic {
+    background-color: #ff8ae2;
+}
+
+.pokemons .dark {
+    background-color: #666;
+}
+
+.pokemons .rock {
+    background-color: #b8a137;
+}
+
+.pokemons .bug {
+    background-color: #a8b720;
+}
+
+.pokemons .ghost {
+    background-color: #756bb1;
+}
+
+.pokemons .steel {
+    background-color: #aab2bd;
+}
+
+.pokemons .dragon {
+    background-color: #c5cae1;
+}
+
+.pokemons .fairy {
+    background-color: #ee99ac;
+}
+
+.pokemons li {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #14A06F;
+    color: #fff;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
@@ -50,9 +132,9 @@ body {
     padding: 1rem;
     border-radius: 1rem;
     background-color: #14A06F;
-    color: #fff;
+    /* color: #fff;
     width: 190px;
-    height: 120px;
+    height: 120px; */
 }
 
 .number {
@@ -63,8 +145,9 @@ body {
 }
 
 .name {
+    text-transform: capitalize;
     color: #fff;
-    margin-bottom: .25rem;
+    margin-bottom: .25rem 0;
 }
 
 .detail {
@@ -81,17 +164,36 @@ body {
 }
 
 .type {
-    background-color: #14A06F;
+    background-color: #61e1ca;
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
 }
 
-img {
-    /* max-width: 100%; */
-    /* height: 70px;    */
-    margin-top: -50px;   
-    margin-left: 100px;  
+.detail img {
+    max-width: 100%;
+    height: 80px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: .25rem 0.5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
 }
